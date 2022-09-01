@@ -1,0 +1,16 @@
+IMM R0 1
+IMM R1 20
+IMM R2 0
+@Loop_start:
+CPY IO R0
+INC R0
+SEQ R2 R0 R1
+
+JPZ R2  @loop_start
+
+CPY IO R0
+
+
+END
+
+
